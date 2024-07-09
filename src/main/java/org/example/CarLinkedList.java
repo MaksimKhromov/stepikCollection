@@ -62,6 +62,11 @@ public class CarLinkedList implements CarList {
         return findElement(car) != -1;
     }
 
+    @Override
+    public Iterator<Car> iterator() {
+        return null;
+    }
+
 //    @Override
 //    public Iterator<Car> iterator() {
 //        return new Iterator<Car>() {
@@ -77,6 +82,8 @@ public class CarLinkedList implements CarList {
 //            }
 //        };
 //    }
+
+
 
     @Override
     public boolean removeAt(int index) {

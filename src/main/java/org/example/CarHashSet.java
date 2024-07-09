@@ -1,5 +1,7 @@
 package org.example;
 
+import java.util.Iterator;
+
 public class CarHashSet implements CarSet {
 
     private static final int INITIAL_CAPACITY = 16;
@@ -104,6 +106,11 @@ public class CarHashSet implements CarSet {
 
     private int getElementPosition(Car car, int arrayLength) {
         return Math.abs(car.hashCode() % arrayLength);
+    }
+
+    @Override
+    public Iterator<Car> iterator() {
+        return null;
     }
 
     private static class Entry {
